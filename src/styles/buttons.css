@@ -1,0 +1,32 @@
+
+/* * •‒•‒•‒••‒•‒•‒•‒•‒•‒•‒•‒•‒•‒•‒•‒•‒•‒•‒• */
+/* * ➤ BUTTONS                             */
+.btn {
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 15px;
+    text-align: center;
+    transition: 0.2s ease-in-out all;
+  }
+  
+.btn-bold { font-weight: bold; }
+
+.btn-primary { background-color: #0A55BF; }
+.btn-primary:hover { background-color: #1A79FF; }
+
+.btn-secondary { background-color: #4D4D4D; }
+.btn-secondary:hover { background-color: #737373; }
+
+.btn-success { background-color: #08A677; }
+.btn-success:hover { background-color: #0ACC92; }
+
+.btn-info { background-color: #0CA6F2; }
+.btn-info:hover { background-color: #33BBFF; }
+
+.btn-warning { background-color: #F27F0C; }
+.btn-warning:hover { background-color: #FF9326; }
+
+.btn-danger { background-color: #D90B0B; }
+.btn-danger:hover { background-color: #F21818; }

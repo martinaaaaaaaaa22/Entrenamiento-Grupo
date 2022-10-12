@@ -1,0 +1,31 @@
+<%- include("partials/_header") -%>
+
+<div class="container container-md grid">
+    <div class="w-90">     
+        <form action="/update/<%= data.cod_alumno %>" method="post" class="form">
+            <input class="form-input" type="text" name="dni_alumno" value="<%= data.dni_alumno %>" placeholder="DNI">
+            <input class="form-input" type="text" name="nom_alumno" value="<%= data.nom_alumno %>" placeholder="Nombre">
+            <input class="form-input" type="text" name="ape_alumno" value="<%= data.ape_alumno %>" placeholder="Apellidos">
+            <input class="form-input" type="text" name="ciu_alumno" value="<%= data.ciudad_alumno %>" placeholder="Ciudad">
+            <select class="form-select" name="cur_alumno" id="cur_alumno">
+                <option <%= data.cod_curso.charAt(0) == "1" ? "selected" : "" %> value="1"> 1° </option>
+                <option <%= data.cod_curso.charAt(0) == "2" ? "selected" : "" %> value="2"> 2° </option>
+                <option <%= data.cod_curso.charAt(0) == "3" ? "selected" : "" %> value="3"> 3° </option>
+                <option <%= data.cod_curso.charAt(0) == "4" ? "selected" : "" %> value="4"> 4° </option>
+                <option <%= data.cod_curso.charAt(0) == "5" ? "selected" : "" %> value="5"> 5° </option>
+                <option <%= data.cod_curso.charAt(0) == "6" ? "selected" : "" %> value="6"> 6° </option>
+                <option <%= data.cod_curso.charAt(0) == "7" ? "selected" : "" %> value="7"> 7° </option>
+            </select>
+            <select class="form-select" name="div_alumno" id="div_alumno" >
+                <option <%= data.cod_curso.charAt(1) == "A" ? "selected" : "" %> value="A"> "A" </option>
+                <option <%= data.cod_curso.charAt(1) == "B" ? "selected" : "" %> value="B"> "B" </option>
+                <option <%= data.cod_curso.charAt(1) == "C" ? "selected" : "" %> value="C"> "C" </option>
+            </select>
+            <a href="">
+                <button class="btn btn-primary w-100">GUARDAR</button>
+            </a>
+        </form>
+    </div>
+</div>
+
+<%- include("partials/_footer") -%>
